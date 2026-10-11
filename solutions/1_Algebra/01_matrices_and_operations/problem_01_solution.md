@@ -55,7 +55,7 @@ The first column of $B$ is $1,-2,4$, so the column vector is
 \begin{pmatrix}1\\-2\\4\end{pmatrix}.
 ```
 
-## Verification and Consistency Checks
+## Checks
 
 I checked the positions against the original matrices. In $A$, row 2 is $(0,4,5)$, so $a_{23}=5$. In $B$, row 3 is $(4,1)$, so $b_{32}=1$.
 
