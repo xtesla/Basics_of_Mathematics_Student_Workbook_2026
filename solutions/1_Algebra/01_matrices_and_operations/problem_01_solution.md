@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-Given the matrices
+
 
 ```math
 A=\begin{pmatrix}2&-1&3\\0&4&5\end{pmatrix},
