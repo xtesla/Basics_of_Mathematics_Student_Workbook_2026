@@ -2,7 +2,6 @@
 
 ## Problem
 
-Given
 
 $$
 A=\begin{pmatrix}2&-1&3\\0&4&5\end{pmatrix},
