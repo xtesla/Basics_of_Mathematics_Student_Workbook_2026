@@ -2,6 +2,7 @@
 
 ## Problem
 
+Given
 
 $$
 A=\begin{pmatrix}2&-1&3\\0&4&5\end{pmatrix},
@@ -17,26 +18,31 @@ The size of a matrix is rows $\times$ columns. In $a_{ij}$, the first number tel
 
 ## Solution
 
-1. $A$ has 2 rows and 3 columns, so its size is $2\times3$.
-   $B$ has 3 rows and 2 columns, so its size is $3\times2$.
+**1. Matrix sizes**
 
-2. Reading the values from the matrices:
+$A$ has 2 rows and 3 columns, so its size is $2\times3$.
 
-   
-   a_{12}=-1,\quad a_{23}=5,\quad b_{21}=-2,\quad b_{32}=1.
-   
+$B$ has 3 rows and 2 columns, so its size is $3\times2$.
 
-3. The second row of $A$ is
+**2. Matrix entries**
 
-   
-   \begin{pmatrix}0&4&5\end{pmatrix}.
-   
+$$
+a_{12}=-1,\quad a_{23}=5,\quad b_{21}=-2,\quad b_{32}=1.
+$$
 
-   The first column of $B$ is
+**3. Row and column vectors**
 
-   
-   \begin{pmatrix}1\\-2\\4\end{pmatrix}.
-   
+The second row of $A$ is
+
+$$
+\begin{pmatrix}0&4&5\end{pmatrix}.
+$$
+
+The first column of $B$ is
+
+$$
+\begin{pmatrix}1\\-2\\4\end{pmatrix}.
+$$
 
 ## Check
 
