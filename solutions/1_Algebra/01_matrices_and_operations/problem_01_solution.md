@@ -4,11 +4,11 @@
 
 Given
 
-$$
+```math
 A=\begin{pmatrix}2&-1&3\\0&4&5\end{pmatrix},
 \qquad
 B=\begin{pmatrix}1&0\\-2&3\\4&1\end{pmatrix}.
-$$
+```
 
 Find the size of each matrix, the entries $a_{12}$, $a_{23}$, $b_{21}$ and $b_{32}$, the second row of $A$, and the first column of $B$.
 
@@ -26,23 +26,23 @@ $B$ has 3 rows and 2 columns, so its size is $3\times2$.
 
 **2. Matrix entries**
 
-$$
+```math
 a_{12}=-1,\quad a_{23}=5,\quad b_{21}=-2,\quad b_{32}=1.
-$$
+```
 
 **3. Row and column vectors**
 
 The second row of $A$ is
 
-$$
+```math
 \begin{pmatrix}0&4&5\end{pmatrix}.
-$$
+```
 
 The first column of $B$ is
 
-$$
+```math
 \begin{pmatrix}1\\-2\\4\end{pmatrix}.
-$$
+```
 
 ## Check
 
