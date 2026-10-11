@@ -22,21 +22,21 @@ The size of a matrix is rows $\times$ columns. In $a_{ij}$, the first number tel
 
 2. Reading the values from the matrices:
 
-   $$
+   
    a_{12}=-1,\quad a_{23}=5,\quad b_{21}=-2,\quad b_{32}=1.
-   $$
+   
 
 3. The second row of $A$ is
 
-   $$
+   
    \begin{pmatrix}0&4&5\end{pmatrix}.
-   $$
+   
 
    The first column of $B$ is
 
-   $$
+   
    \begin{pmatrix}1\\-2\\4\end{pmatrix}.
-   $$
+   
 
 ## Check
 
