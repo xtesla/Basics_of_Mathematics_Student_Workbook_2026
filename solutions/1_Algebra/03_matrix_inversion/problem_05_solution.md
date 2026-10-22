@@ -14,7 +14,7 @@ Use row operations to transform $[A\mid I]$ into $[I\mid A^{-1}]$. The same step
 
 ## Step-by-Step Solution
 
-Start with $[A\mid I]$. Use $R_3\leftarrow R_3-R_1$, then $R_3\leftarrow R_3+R_2$, then $R_3\leftarrow\frac12R_3$. Next use $R_2\leftarrow R_2-R_3$, $R_1\leftarrow R_1-R_2$, and finally $R_1\leftarrow R_1-R_3$.
+Start with $[A\mid I]$. Use $R_3\leftarrow R_3-R_1$, then $R_3\leftarrow R_3+R_2$, then $R_3\leftarrow\frac12R_3$. Next use $R_2\leftarrow R_2-R_3$, $R_1\leftarrow R_1-R_2$.
 
 The augmented matrix becomes
 
