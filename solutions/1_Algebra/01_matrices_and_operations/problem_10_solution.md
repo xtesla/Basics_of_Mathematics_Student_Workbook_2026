@@ -30,6 +30,14 @@ So
 AB=\begin{pmatrix}-1&2\\2&1\end{pmatrix}.
 ```
 
+Here is the second column calculation in full:
+
+```math
+Ab_2=\begin{pmatrix}1(2)+2(0)+0(1)\\0(2)+1(0)+1(1)\end{pmatrix}=\begin{pmatrix}2\\1\end{pmatrix}.
+```
+
+In general, $(AB)_{ij}$ means row $i$ of $A$ dotted with column $j$ of $B$. That is also entry $i$ of $Ab_j$, so the $j$-th column of $AB$ must equal $Ab_j$.
+
 ## Verification and Consistency Checks
 
 The first column of $AB$ is $Ab_1$, and the second is $Ab_2$, exactly as expected.

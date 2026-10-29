@@ -30,6 +30,26 @@ A^2=\begin{pmatrix}4&4\\0&4\end{pmatrix},\qquad A^3=\begin{pmatrix}8&12\\0&8\end
 
 The diagonal doubles each time; the upper-right entry is $n2^{n-1}$ in $A^n$.
 
+To see where the powers come from, multiply row by column:
+
+```math
+A^2=\begin{pmatrix}
+2(2)+1(0)&2(1)+1(2)\\
+0(2)+2(0)&0(1)+2(2)
+\end{pmatrix}=\begin{pmatrix}4&4\\0&4\end{pmatrix}.
+```
+
+Then multiply $A^2$ by $A$:
+
+```math
+A^3=\begin{pmatrix}
+4(2)+4(0)&4(1)+4(2)\\
+0(2)+4(0)&0(1)+4(2)
+\end{pmatrix}=\begin{pmatrix}8&12\\0&8\end{pmatrix}.
+```
+
+Multiplication by $I$ and addition of $0$ do not change any entries.
+
 ## Verification and Consistency Checks
 
 Multiply $A^2A$: its upper-right entry is $4(1)+4(2)=12$, matching $A^3$.

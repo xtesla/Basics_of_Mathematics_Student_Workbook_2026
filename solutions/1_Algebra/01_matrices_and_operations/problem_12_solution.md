@@ -26,6 +26,19 @@ A^{n+1}=A^nA=\begin{pmatrix}1&n\\0&1\end{pmatrix}\begin{pmatrix}1&1\\0&1\end{pma
 
 It is true for $n=1$, and the step proves it for every positive integer $n$.
 
+Here are the products that give the first few powers:
+
+```math
+A^2=\begin{pmatrix}1(1)+1(0)&1(1)+1(1)\\0(1)+1(0)&0(1)+1(1)\end{pmatrix}=\begin{pmatrix}1&2\\0&1\end{pmatrix}.
+```
+
+```math
+A^3=A^2A=\begin{pmatrix}1&1(1)+2(1)\\0&1\end{pmatrix}=\begin{pmatrix}1&3\\0&1\end{pmatrix},
+\quad A^4=A^3A=\begin{pmatrix}1&1(1)+3(1)\\0&1\end{pmatrix}=\begin{pmatrix}1&4\\0&1\end{pmatrix}.
+```
+
+For induction, assuming $A^n=\begin{pmatrix}1&n\\0&1\end{pmatrix}$, the next product has entries $1\cdot1+n\cdot0=1$, $1\cdot1+n\cdot1=n+1$, $0\cdot1+1\cdot0=0$ and $0\cdot1+1\cdot1=1$. Hence the stated formula also holds at $n+1$.
+
 ## Verification and Consistency Checks
 
 The formula gives the already computed matrices when $n=2,3,4$.

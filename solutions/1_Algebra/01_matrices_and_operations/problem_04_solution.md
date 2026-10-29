@@ -26,6 +26,17 @@ BA=\begin{pmatrix}2&4\\3&7\end{pmatrix}.
 
 Since $AB\ne BA$, matrix multiplication is not generally commutative.
 
+For $BA$ I also calculate every entry by row and column:
+
+```math
+BA=\begin{pmatrix}
+2(1)+0(0)&2(2)+0(1)\\
+3(1)+1(0)&3(2)+1(1)
+\end{pmatrix}=\begin{pmatrix}2&4\\3&7\end{pmatrix}.
+```
+
+The two products have different top-left entries, so their order matters.
+
 ## Verification and Consistency Checks
 
 The top-left entries are 8 and 2, already showing that $AB$ and $BA$ differ.
