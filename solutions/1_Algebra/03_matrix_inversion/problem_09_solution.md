@@ -22,6 +22,18 @@ A^{-1}=\begin{pmatrix}1&-2\\0&1\end{pmatrix}.
 X=A^{-1}B=\begin{pmatrix}1&-2\\0&1\end{pmatrix}\begin{pmatrix}3&1\\2&4\end{pmatrix}=\begin{pmatrix}-1&-7\\2&4\end{pmatrix}.
 ```
 
+Multiply $AX=B$ on the left by $A^{-1}$: $A^{-1}(AX)=(A^{-1}A)X=IX=X$. Since $\det A=1$, the $2\times2$ formula gives $A^{-1}=\begin{pmatrix}1&-2\\0&1\end{pmatrix}$.
+
+```math
+A^{-1}B=\begin{pmatrix}1(3)-2(2)&1(1)-2(4)\\0(3)+1(2)&0(1)+1(4)\end{pmatrix}=\begin{pmatrix}-1&-7\\2&4\end{pmatrix}.
+```
+
+Checking by multiplying back:
+
+```math
+AX=\begin{pmatrix}1(-1)+2(2)&1(-7)+2(4)\\0(-1)+1(2)&0(-7)+1(4)\end{pmatrix}=\begin{pmatrix}3&1\\2&4\end{pmatrix}=B.
+```
+
 ## Verification and Consistency Checks
 
 $AX=\begin{pmatrix}3&1\\2&4\end{pmatrix}=B$.

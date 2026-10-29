@@ -20,6 +20,13 @@ The determinant is $3(4)-2(5)=2$, so
 A^{-1}=\frac12\begin{pmatrix}4&-2\\-5&3\end{pmatrix}.
 ```
 
+Using the $2\times2$ inverse formula gives the stated matrix. Checking the complete product:
+
+```math
+AA^{-1}=\frac12\begin{pmatrix}3(4)+2(-5)&3(-2)+2(3)\\5(4)+4(-5)&5(-2)+4(3)\end{pmatrix}
+=\frac12\begin{pmatrix}2&0\\0&2\end{pmatrix}=I.
+```
+
 ## Verification and Consistency Checks
 
 Multiplication gives $AA^{-1}=\begin{pmatrix}1&0\\0&1\end{pmatrix}$.

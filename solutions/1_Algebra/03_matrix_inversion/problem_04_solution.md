@@ -24,6 +24,8 @@ Gauss–Jordan elimination applies the same row operations to $[A\mid I]$. When 
 
 Hence $A^{-1}=\begin{pmatrix}-5&2\\3&-1\end{pmatrix}$.
 
+The row operations can be viewed as multiplication on the left by an invertible matrix $E$. Applying them to $[A\mid I]$ changes it to $[EA\mid EI]$. When the left side becomes $EA=I$, we get $E=A^{-1}$. Therefore the right block is $EI=A^{-1}$. This explains why the Gauss–Jordan method works.
+
 ## Verification and Consistency Checks
 
 $AA^{-1}=I$; for example the top-left entry is $1(-5)+2(3)=1$.

@@ -24,6 +24,14 @@ For all other $t$:
 A(t)^{-1}=\frac1{1-t^2}\begin{pmatrix}1&-t\\-t&1\end{pmatrix}.
 ```
 
+For $\begin{pmatrix}a&b\\c&d\end{pmatrix}$, the inverse is $\frac1{ad-bc}\begin{pmatrix}d&-b\\-c&a\end{pmatrix}$. In this question $a=d=1$ and $b=c=t$.
+
+```math
+ad-bc=1\cdot1-t\cdot t=1-t^2,\qquad A(t)^{-1}=\frac1{1-t^2}\begin{pmatrix}1&-t\\-t&1\end{pmatrix}.
+```
+
+At $t=\pm1$, the determinant and the denominator are zero, and the two rows are dependent.
+
 ## Verification and Consistency Checks
 
 At $t=\pm1$, the denominator becomes zero and the rows are dependent.

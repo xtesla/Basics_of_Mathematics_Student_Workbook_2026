@@ -29,6 +29,26 @@ S^{-1}H^{-1}=\begin{pmatrix}\frac12&0\\0&1\end{pmatrix}\begin{pmatrix}1&-1\\0&1\
 
 But $H^{-1}S^{-1}=\begin{pmatrix}1/2&-1\\0&1\end{pmatrix}$, which is different.
 
+First, $HS$ uses these dot products:
+
+```math
+HS=\begin{pmatrix}1(2)+1(0)&1(0)+1(1)\\0(2)+1(0)&0(0)+1(1)\end{pmatrix}=\begin{pmatrix}2&1\\0&1\end{pmatrix}.
+```
+
+Here $\det T=2$, so the $2\times2$ inverse formula gives $T^{-1}=\frac12\begin{pmatrix}1&-1\\0&2\end{pmatrix}$. Separately,
+
+```math
+S^{-1}H^{-1}=\begin{pmatrix}\frac12(1)+0(0)&\frac12(-1)+0(1)\\0(1)+1(0)&0(-1)+1(1)\end{pmatrix}=\begin{pmatrix}\frac12&-\frac12\\0&1\end{pmatrix}.
+```
+
+But the wrong order gives
+
+```math
+H^{-1}S^{-1}=\begin{pmatrix}1(\frac12)+(-1)(0)&1(0)+(-1)(1)\\0(\frac12)+1(0)&0(0)+1(1)\end{pmatrix}=\begin{pmatrix}\frac12&-1\\0&1\end{pmatrix}.
+```
+
+The correct two methods agree; the upper-right entry in the wrong order is $-1$ instead of $-1/2$.
+
 ## Verification and Consistency Checks
 
 $TT^{-1}=I$, but the wrong-order candidate does not undo $T$.

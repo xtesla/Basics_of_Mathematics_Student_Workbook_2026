@@ -24,6 +24,24 @@ BA=\begin{pmatrix}1&0\\0&1\end{pmatrix}.
 
 Therefore $B=A^{-1}$.
 
+To show both products, I calculate each entry:
+
+```math
+AB=\begin{pmatrix}
+2(1)+1(-1)&2(-1)+1(2)\\
+1(1)+1(-1)&1(-1)+1(2)
+\end{pmatrix}=\begin{pmatrix}1&0\\0&1\end{pmatrix}.
+```
+
+```math
+BA=\begin{pmatrix}
+1(2)+(-1)(1)&1(1)+(-1)(1)\\
+(-1)(2)+2(1)&(-1)(1)+2(1)
+\end{pmatrix}=\begin{pmatrix}1&0\\0&1\end{pmatrix}.
+```
+
+Both off-diagonal entries are zero, and both diagonals are one.
+
 ## Verification and Consistency Checks
 
 Both multiplication orders give the $2\times2$ identity.

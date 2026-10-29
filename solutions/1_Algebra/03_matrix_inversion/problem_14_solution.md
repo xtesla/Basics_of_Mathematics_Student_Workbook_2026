@@ -24,6 +24,14 @@ Since $AA=I$, the definition of inverse gives $A^{-1}=A$. For example,
 A=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad A^2=\begin{pmatrix}1&0\\0&1\end{pmatrix}.
 ```
 
+Expanding all four entries in the example gives
+
+```math
+A^2=\begin{pmatrix}0(0)+1(1)&0(1)+1(0)\\1(0)+0(1)&1(1)+0(0)\end{pmatrix}=\begin{pmatrix}1&0\\0&1\end{pmatrix}.
+```
+
+Thus both diagonal entries equal 1 and both off-diagonal entries equal 0.
+
 ## Verification and Consistency Checks
 
 This matrix is neither $I$ nor $-I$, and squaring it gives $I$.
