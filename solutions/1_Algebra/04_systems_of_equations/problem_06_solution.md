@@ -19,6 +19,8 @@ The first equation is $x+y=2$. Multiplying by $a$ gives $ax+ay=2a$, but the seco
 
 Exactly one solution never occurs.
 
+The geometric picture needs one exception. If $a\notin\{0,2\}$, the two equations give distinct parallel lines. At $a=0$, however, the second equation is $0=4$, an immediate contradiction rather than a line. At $a=2$, both equations describe the same line $x+y=2$, leaving one free variable.
+
 ## Verification and Consistency Checks
 
 At $a=2$, both equations describe the same line. Otherwise they are parallel, distinct lines.
