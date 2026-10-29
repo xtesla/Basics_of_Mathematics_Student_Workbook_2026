@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1020">
+  <meta name="description" content="A beautiful, interactive companion to the VIZJA Basics of Mathematics Student Workbook. Explore problems, solutions, and track your progress.">
+  <title>Math Atlas — Your mathematics workspace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div id="app" class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Course navigation">
+      <div class="sidebar-top">
+        <a class="brand" href="#/" aria-label="Math Atlas home">
+          <span class="brand-mark"><span>∑</span></span>
+          <span class="brand-copy"><strong>MATH<span class="brand-accent">ATLAS</span></strong><small>THE STUDENT WORKBOOK</small></span>
+        </a>
+        <button class="icon-button close-sidebar" type="button" data-action="close-sidebar" aria-label="Close menu">×</button>
+      </div>
+      <div class="sidebar-search">
+        <button class="search-launch" type="button" data-action="search" aria-label="Search questions">
+          <span class="search-magnify" aria-hidden="true">⌕</span><span>Search anything...</span><kbd>⌘ K</kbd>
+        </button>
+      </div>
+      <div class="sidebar-scroll">
+        <div id="nav" class="navigation">
+          <div class="skeleton" style="height:42px;margin:12px 6px"></div>
+          <div class="skeleton" style="height:112px;margin:10px 6px"></div>
+          <div class="skeleton" style="height:112px;margin:10px 6px"></div>
+        </div>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="sync-panel">
+          <div class="sync-light"></div>
+          <div><strong>Connected to GitHub</strong><small id="sync-text">Loading workbook...</small></div>
+          <button class="refresh-button" data-action="refresh" title="Refresh from GitHub" aria-label="Refresh data">↻</button>
+        </div>
+        <a class="sidebar-footer-link" href="https://github.com/xtesla/Basics_of_Mathematics_Student_Workbook_2026" target="_blank" rel="noopener noreferrer">
+          <span>Source repository</span><span>↗</span>
+        </a>
+      </div>
+    </aside>
+    <div id="mobile-overlay" class="mobile-overlay" data-action="close-sidebar"></div>
+    <div class="main-shell">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button type="button" class="icon-button mobile-menu" data-action="toggle-sidebar" aria-label="Open navigation">☰</button>
+          <div id="breadcrumb" class="breadcrumbs"><span>Workspace</span><span class="slash">/</span><strong>Overview</strong></div>
+        </div>
+        <div class="topbar-right">
+          <span class="topbar-badge"><span class="badge-dot"></span> WINTER 2026</span>
+          <button class="icon-button" data-action="search" title="Search (/)" aria-label="Open search">⌕</button>
+          <button class="icon-button theme-toggle" data-action="theme" title="Toggle theme" aria-label="Toggle color theme">☼</button>
+          <a class="github-button" href="https://github.com/xtesla/Basics_of_Mathematics_Student_Workbook_2026" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+        </div>
+      </header>
+      <main id="view" class="view" tabindex="-1" aria-live="polite">
+        <section class="loading-hero">
+          <span class="eyebrow">WELCOME TO YOUR WORKSPACE</span>
+          <h1>Math, made <em>clear.</em></h1>
+          <p>Organizing your questions and solutions from GitHub...</p>
+          <div class="loading-track"><div></div></div>
+        </section>
+      </main>
+      <footer class="main-footer"><span>© 2026 Math Atlas · Built for focused learning</span><span>VIZJA · Basics of Mathematics</span></footer>
+    </div>
+  </div>
+  <div id="search-dialog" class="search-dialog" role="dialog" aria-label="Search exercises" aria-modal="true" hidden>
+    <div class="dialog-backdrop" data-action="close-search"></div>
+    <div class="dialog-panel">
+      <div class="dialog-search-row"><span class="dialog-icon">⌕</span><input type="search" id="global-search" autocomplete="off" placeholder="Search topics, questions, concepts..." aria-label="Search questions"><kbd>ESC</kbd></div>
+      <div class="dialog-results" id="search-results"></div>
+      <div class="dialog-footer"><span>Search across the full mathematics workbook</span><span>↵ Open</span></div>
+    </div>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
