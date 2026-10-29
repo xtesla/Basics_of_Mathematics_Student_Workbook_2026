@@ -22,6 +22,14 @@ For $k\ne2$ there is one solution for every $b$. At $k=2$, the second coefficien
 
 If $b=(1,2)^T$, the equations agree and there are infinitely many solutions. If $b=(1,3)^T$, they contradict and there is no solution.
 
+For a $2\times2$ matrix, $\det\begin{pmatrix}a&b\\c&d\end{pmatrix}=ad-bc$. Here:
+
+```math
+\det A=1\cdot4-2\cdot k=4-2k.
+```
+
+It is nonzero exactly when $k\ne2$, which gives a unique solution for every right-hand side.
+
 ## Verification and Consistency Checks
 
 At $k=2$, $x+2y=1$ and $2x+4y=2$ coincide, while changing 2 to 3 makes them inconsistent.

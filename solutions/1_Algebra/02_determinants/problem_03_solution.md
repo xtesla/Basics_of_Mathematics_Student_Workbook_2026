@@ -26,6 +26,14 @@ After swapping rows 1 and 2, $\det B$ should be $-6$.
 B=\begin{pmatrix}0&3&1\\1&2&0\\2&1&1\end{pmatrix},\qquad\det B=-3(1)+1(1-4)=-6.
 ```
 
+I use expansion along row 1 with signs $+,-,+$. For each term, delete the chosen entry's row and column and calculate the remaining $2\times2$ determinant with $ad-bc$.
+
+```math
+\det A=1(3\cdot1-1\cdot1)-2(0\cdot1-1\cdot2)+0=2+4=6.
+```
+
+The same rule on the swapped matrix gives $-6$, agreeing with the row-swap sign rule.
+
 ## Verification and Consistency Checks
 
 The direct calculation gives -6, exactly the negative of $\det A$.

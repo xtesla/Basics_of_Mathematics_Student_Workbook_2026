@@ -28,6 +28,8 @@ Then $R_3\leftarrow R_3+2R_2$:
 
 All three operations preserve the determinant, so it is $1$.
 
+The final matrix is upper triangular. Its determinant is the diagonal product $1\cdot1\cdot1=1$. Since every row replacement used preserves the determinant, the determinant of the starting matrix is also 1.
+
 ## Verification and Consistency Checks
 
 Direct expansion of the original matrix also gives $10-2(4-7)+3(0-5)=1$, agreeing with elimination.

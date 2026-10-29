@@ -28,6 +28,8 @@ Then $R_3\leftarrow R_3-2R_2$:
 
 All operations preserve the determinant, so $\det A=1(1)(1)=1$.
 
+The last matrix is upper triangular, so its determinant is the product of diagonal entries: $1\cdot1\cdot1=1$. Since the row replacements do not change the determinant, the original determinant is also 1.
+
 ## Verification and Consistency Checks
 
 Direct expansion gives $2-4+3=1$.

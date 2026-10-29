@@ -28,6 +28,14 @@ After $R_2\leftarrow R_2-2R_1$:
 
 Expanding along row 2 gives $\det A=-(t-6)=6-t$. Thus $t=6$ is the only noninvertible value.
 
+The operation $R_2\leftarrow R_2-2R_1$ adds a multiple of another row, so it does not change the determinant. Expand the resulting determinant along row 2, where only the last entry is nonzero:
+
+```math
+\det A=(t-6)(-1)^{2+3}\det\begin{pmatrix}1&2\\0&1\end{pmatrix}=-(t-6)(1)=6-t.
+```
+
+The minus sign comes from the cofactor sign at position $(2,3)$.
+
 ## Verification and Consistency Checks
 
 At $t=6$, row 2 of the original matrix equals twice row 1, so the determinant must vanish.
